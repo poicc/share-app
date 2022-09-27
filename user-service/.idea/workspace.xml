@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2697fb64-927d-4ec4-aa8a-621dff6b8e45" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../content-service/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-service/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/ContentCenterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/ContentCenterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notice-service/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../notice-service/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../notice-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../notice-service/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notice-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../notice-service/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +101,9 @@
       <workItem from="1664259757467" duration="200000" />
       <workItem from="1664259988658" duration="418000" />
       <workItem from="1664260456115" duration="73000" />
-      <workItem from="1664260622707" duration="1140000" />
+      <workItem from="1664260622707" duration="1774000" />
+      <workItem from="1664280906662" duration="1000" />
+      <workItem from="1664281009528" duration="3100000" />
     </task>
     <servers />
   </component>

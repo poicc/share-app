@@ -5,10 +5,10 @@ spring:
     nacos:
       discovery:
         namespace: dev
-        server-addr: 42.192.1.98:8848
+        server-addr: 139.196.153.80:8849
         enabled: true
       config:
-        server-addr: 42.192.1.98:8848
+        server-addr: 139.196.153.80:8849
         file-extension: yml
         namespace: dev
         group: DEFAULT_GROUP

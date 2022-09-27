@@ -3,13 +3,8 @@ spring:
     name: gateway-service
   cloud:
     nacos:
-      discovery:
-        namespace: dev
-        server-addr: 139.196.153.80:8849
-        enabled: true
       config:
         server-addr: 139.196.153.80:8849
-        file-extension: yml
         namespace: dev
         group: DEFAULT_GROUP
         timeout: 5000
@@ -17,3 +12,4 @@ spring:
         config-retry-time: 2000
         max-retry: 3
         refresh-enabled: true
+        file-extension: yml

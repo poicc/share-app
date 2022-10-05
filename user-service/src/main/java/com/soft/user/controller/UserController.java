@@ -1,6 +1,7 @@
 package com.soft.user.controller;
 
 
+import com.soft.user.auth.CheckLogin;
 import com.soft.user.common.ResponseResult;
 import com.soft.user.common.ResultCode;
 import com.soft.user.domain.dto.UserDto;
@@ -25,17 +26,21 @@ public class UserController {
     private final UserService userService;
 
     @GetMapping("{id}")
-    public ResponseResult getUserById(@PathVariable Integer id) {
+    @CheckLogin
+    public ResponseResult getUserById(@PathVariable Integer id) throws InterruptedException {
+        Thread.sleep(500);
         return ResponseResult.success(userService.findById(id));
     }
 
     @PostMapping(value = "/login")
     public ResponseResult login(@RequestBody UserDto userDto) {
-        User user = userService.login(userDto);
-        if(user == null) {
+        String token = userService.login(userDto);
+        if(token == null) {
             return ResponseResult.failure(ResultCode.USER_SIGN_IN_FAIL);
         } else {
-            return ResponseResult.success(user);
+            return ResponseResult.success(token);
         }
     }
+
+
 }

@@ -1,0 +1,28 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 139.196.153.80:8849
+        username: nacos
+        password: naocs
+        namespace: dev
+#        group: DEV_GROUP
+        register-enabled: true
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true   #开启网关服务
+#          lower-case-service-id: true
+#      globalcors:
+#        add-to-simple-url-handler-mapping: true
+#      routes: # 网关服务路由配置
+#        - id: user-service   # 服务id
+#          order: 1      #优先级
+#          predicates: #规则定义
+#            - Path=/api/v1/users/**
+#            - After=2022-09-29T11:00:00.00+08:00[Asia/Shanghai]
+#            - Before=2022-09-29T12:00:00.00+08:00[Asia/Shanghai]
+#          #          uri: lb://user-service   #服务uri
+#          uri: http://localhost:8081   #服务url
+#          filters:
+#            - StripPrefix=2

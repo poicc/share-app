@@ -15,7 +15,7 @@ import javax.annotation.Resource;
  */
 
 @Slf4j
-@Configuration
+//@Configuration
 public class DynamicRoutesLoader implements InitializingBean {
     @Resource
     private NacosConfigManager configService;

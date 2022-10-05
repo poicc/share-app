@@ -1,15 +1,22 @@
 server:
   port: 10000
 
-spring:
-  cloud:
-    nacos:
-      discovery:
-        namespace: dev
-        server-addr: 139.196.153.80:8849
-        register-enabled: true
-        username: nacos
-        password: nacos
+#spring:
+#  cloud:
+#    nacos:
+#      discovery:
+#        namespace: prod
+#        server-addr: 139.196.153.80:8849
+#        register-enabled: true
+#        username: nacos
+#        password: nacos
+#spring:
+#  cloud:
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true   #开启网关服务
+#          lower-case-service-id: true
 #      routes:   # 网关服务路由配置
 #        - id: user-service   # 服务id
 #          order: 1      #优先级

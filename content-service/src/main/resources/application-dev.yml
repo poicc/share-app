@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 139.196.153.80:8849
+        username: nacos
+        password: naocs
+        namespace: dev
+#        group: DEV_GROUP
+        register-enabled: true

@@ -17,7 +17,7 @@ import java.util.concurrent.Executor;
  * @date: 2022/9/27 19:57
  */
 @Slf4j
-@Component
+//@Component
 public class DynamicRoutesListener implements Listener {
     @Resource
     private GatewayService gatewayService;

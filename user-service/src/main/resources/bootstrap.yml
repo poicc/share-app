@@ -1,21 +1,22 @@
 spring:
+  profiles:
+    active: dev
   application:
     name: user-service
   cloud:
     nacos:
-      discovery:
-        server-addr: 139.196.153.80:8849
-        username: nacos
-        password: naocs
-        namespace: dev
       config:
         server-addr: 139.196.153.80:8849
         file-extension: yml
         namespace: dev
-        group: DEFAULT_GROUP
+#        group: DEV_GROUP
         timeout: 5000
         config-long-poll-timeout: 10000
         config-retry-time: 2000
         max-retry: 3
         # 开启监听和自动刷新
         refresh-enabled: true
+
+jwt:
+  secret: aaaaaaaaaaaaaaaaaaabbbbbbbbbcccccccccc
+  expire-time-in-second: 1209600

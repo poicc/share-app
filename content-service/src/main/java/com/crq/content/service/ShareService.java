@@ -1,7 +1,9 @@
 package com.crq.content.service;
 
-import com.alibaba.csp.sentinel.slots.block.BlockException;
+import com.crq.content.domain.dto.CheckDto;
+import com.crq.content.domain.dto.ShareDto;
 import com.crq.content.domain.entity.Share;
+import org.springframework.data.domain.Page;
 
 import java.util.List;
 
@@ -20,10 +22,13 @@ public interface ShareService {
     Share findById(Integer id);
 
     /**
-     * 查所有
+     * 分页查所有
+     * @param isCheck isCheck
+     * @param pageNum pageNum
+     * @param pageSize pageSize
      * @return list
      */
-    List<Share> findAll();
+    Page<Share> findAll(boolean isCheck, int pageNum, int pageSize);
 
     /**
      * 资源
@@ -33,10 +38,17 @@ public interface ShareService {
     String getNumber(int number);
 
     /**
+     * 审核分享
+     * @param checkDto checkDto
+     * @return share
+     */
+    Share auditShare(CheckDto checkDto);
+
+    /**
      * 资源的异常返回
      * @param number number
      * @param e 异常
      * @return string
      */
-    String blockHandlerGetNumber(int number, BlockException e);
+//    String blockHandlerGetNumber(int number, BlockException e);
 }

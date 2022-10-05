@@ -1,12 +1,24 @@
 spring:
+  profiles:
+    active: dev
   application:
     name: gateway-service
   cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowed-origins:
+              - "http://localhost:64091/"
+            allowed-methods:
+              - GET
+              - POST
+        add-to-simple-url-handler-mapping: true
     nacos:
       config:
         server-addr: 139.196.153.80:8849
         namespace: dev
-        group: DEFAULT_GROUP
+#        group: DEV_GROUP
         timeout: 5000
         config-long-poll-timeout: 10000
         config-retry-time: 2000

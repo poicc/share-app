@@ -22,4 +22,12 @@ public interface ShareRepository extends JpaRepository<Share,Integer> {
      */
     Page<Share> findAllByAuditStatusAndShowFlag(String auditStatus, boolean showFlag,Pageable pageable);
 
+    /**
+     * 分页条件查询
+     * @param auditStatus auditStatus
+     * @param pageable pageable
+     * @return page
+     */
+    Page<Share> findAllByAuditStatus(String auditStatus,Pageable pageable);
+
 }

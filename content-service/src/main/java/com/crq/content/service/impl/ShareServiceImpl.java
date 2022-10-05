@@ -44,7 +44,7 @@ public class ShareServiceImpl implements ShareService {
         if(isCheck) {
             page = shareRepository.findAllByAuditStatusAndShowFlag(AuditStatusEnum.PASS.toString(), true,pageable);
         } else {
-            page = shareRepository.findAll(pageable);
+            page = shareRepository.findAllByAuditStatus(AuditStatusEnum.NOT_YET.toString(),pageable);
         }
 
         return page;

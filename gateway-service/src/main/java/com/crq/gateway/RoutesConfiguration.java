@@ -13,7 +13,7 @@ import reactor.core.publisher.Mono;
  * @description:
  * @date: 2022/9/22 11:01
  */
-@Configuration
+//@Configuration
 public class RoutesConfiguration {
 
     //    @Bean

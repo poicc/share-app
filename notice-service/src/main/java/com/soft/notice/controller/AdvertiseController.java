@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/advertisement")
+@RequestMapping("/advertise")
 @Slf4j
 @RefreshScope
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))

@@ -1,19 +1,15 @@
 spring:
+  profiles:
+    active: dev
   application:
     name: notice-service
   cloud:
     nacos:
-      discovery:
-        server-addr: 139.196.153.80:8849
-        username: nacos
-        password: naocs
-        namespace: dev
       config:
         server-addr: 139.196.153.80:8849
-#        prefix: 文件名前缀 默认是spring.application.name
         file-extension: yml
         namespace: dev
-        group: DEFAULT_GROUP
+        #        group: DEV_GROUP
         timeout: 5000
         config-long-poll-timeout: 10000
         config-retry-time: 2000

@@ -3,6 +3,7 @@ package com.soft.user.service;
 
 import com.soft.user.domain.dto.UserDto;
 import com.soft.user.domain.entity.User;
+import com.soft.user.domain.vo.LoginVO;
 
 /**
  * @author: crq
@@ -23,5 +24,5 @@ public interface UserService {
      * @param userDto userDto
      * @return user
      */
-    String login(UserDto userDto);
+    LoginVO login(UserDto userDto);
 }

@@ -20,3 +20,6 @@ spring:
 jwt:
   secret: aaaaaaaaaaaaaaaaaaabbbbbbbbbcccccccccc
   expire-time-in-second: 1209600
+
+rocketmq:
+  name-server: 120.55.48.170:9876

@@ -6,6 +6,7 @@ import com.soft.user.common.ResponseResult;
 import com.soft.user.common.ResultCode;
 import com.soft.user.domain.dto.UserDto;
 import com.soft.user.domain.entity.User;
+import com.soft.user.domain.vo.LoginVO;
 import com.soft.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -28,17 +29,16 @@ public class UserController {
     @GetMapping("{id}")
     @CheckLogin
     public ResponseResult getUserById(@PathVariable Integer id) throws InterruptedException {
-        Thread.sleep(500);
         return ResponseResult.success(userService.findById(id));
     }
 
     @PostMapping(value = "/login")
     public ResponseResult login(@RequestBody UserDto userDto) {
-        String token = userService.login(userDto);
-        if(token == null) {
+        LoginVO login = userService.login(userDto);
+        if(login == null) {
             return ResponseResult.failure(ResultCode.USER_SIGN_IN_FAIL);
         } else {
-            return ResponseResult.success(token);
+            return ResponseResult.success(login);
         }
     }
 

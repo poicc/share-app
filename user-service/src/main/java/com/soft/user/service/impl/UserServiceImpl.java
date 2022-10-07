@@ -4,6 +4,7 @@ package com.soft.user.service.impl;
 import com.google.common.collect.Maps;
 import com.soft.user.domain.dto.UserDto;
 import com.soft.user.domain.entity.User;
+import com.soft.user.domain.vo.LoginVO;
 import com.soft.user.repository.UserRepository;
 import com.soft.user.service.UserService;
 import com.soft.user.utils.JwtOperator;
@@ -35,7 +36,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public String login(UserDto userDto) {
+    public LoginVO login(UserDto userDto) {
         User user = userRepository.findByMobileAndPassword(userDto.getUsername(), userDto.getPassword());
         if(user != null) {
             HashMap<String,Object> objectHashMap = Maps.newHashMap();
@@ -43,7 +44,8 @@ public class UserServiceImpl implements UserService {
             objectHashMap.put("role",user.getRoles());
             objectHashMap.put("nickname",user.getNickname());
             String token = jwtOperator.generateToken(objectHashMap);
-            return token;
+            LoginVO loginVO = LoginVO.builder().userId(user.getId()).token(token).build();
+            return loginVO;
         } else {
             return null;
         }

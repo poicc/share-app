@@ -5,32 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2697fb64-927d-4ec4-aa8a-621dff6b8e45" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/auth/AuthAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/auth/CheckAuthorization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/auth/CheckLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/domain/dto/CheckDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/handler/GlobalExceptionErrorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/utils/JwtOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../content-service/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../content-service/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gateway-service/src/main/java/com/crq/gateway/RoutesConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gateway-service/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gateway-service/src/main/resources/application-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-service/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-service/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/domain/dto/UserAddBonusDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/domain/entity/MidUserShare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/repository/MidUserShareRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/rocketmq/AsyncProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/rocketmq/SyncProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/service/MidUserShareService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/service/impl/MidUserShareServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../content-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/controller/ShareController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/controller/ShareController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/repository/ShareRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/repository/ShareRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/domain/vo/SharePageVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/domain/vo/SharePageVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/service/ShareService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/service/ShareService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/service/impl/ShareServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../content-service/src/main/java/com/crq/content/service/impl/ShareServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../content-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../content-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../file-service/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../file-service/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/src/main/java/com/crq/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/src/main/java/com/crq/gateway/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/src/main/java/com/crq/gateway/config/DynamicRoutesListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/src/main/java/com/crq/gateway/config/DynamicRoutesListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/src/main/java/com/crq/gateway/config/DynamicRoutesLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/src/main/java/com/crq/gateway/config/DynamicRoutesLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../notice-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../notice-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notice-service/src/main/java/com/soft/notice/entity/Advertise.java" beforeDir="false" afterPath="$PROJECT_DIR$/../notice-service/src/main/java/com/soft/notice/entity/Advertise.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -104,6 +92,9 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/soft/user" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.soft.user.domain.dto" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
@@ -141,6 +132,7 @@
       <workItem from="1664409342332" duration="7798000" />
       <workItem from="1664718891000" duration="4093000" />
       <workItem from="1664860772779" duration="9300000" />
+      <workItem from="1664956526296" duration="8886000" />
     </task>
     <servers />
   </component>

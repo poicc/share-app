@@ -21,7 +21,7 @@ import javax.persistence.Id;
 public class Advertise {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer Id;
+    private Integer id;
     private String cover;
     private String url;
     private Boolean isDisplay;

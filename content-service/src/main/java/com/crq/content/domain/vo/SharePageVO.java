@@ -19,5 +19,8 @@ import java.util.List;
 @Builder
 public class SharePageVO {
     List<Share> shareList;
-
+    Integer totalPage;
+    Long total;
+    Boolean last;
+    Boolean first;
 }

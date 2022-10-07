@@ -3,6 +3,7 @@ package com.crq.content.service;
 import com.crq.content.domain.dto.CheckDto;
 import com.crq.content.domain.dto.ShareDto;
 import com.crq.content.domain.entity.Share;
+import com.crq.content.domain.vo.SharePageVO;
 import org.springframework.data.domain.Page;
 
 import java.util.List;
@@ -28,7 +29,7 @@ public interface ShareService {
      * @param pageSize pageSize
      * @return list
      */
-    Page<Share> findAll(boolean isCheck, int pageNum, int pageSize);
+    SharePageVO findAll(boolean isCheck, int pageNum, int pageSize);
 
     /**
      * 资源
